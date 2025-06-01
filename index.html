@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <form id="weatherForm">
+      <input type="text" id="locationInput" placeholder="Enter location" required />
+      <br>
+      <button type="submit">Get Weather</button>
+    </form>
+    <div id="weatherResult" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Condition:</strong> <span id="condition"></span></p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Air Quality Index (PM2.5):</strong> <span id="aqi"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
